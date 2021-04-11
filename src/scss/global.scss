@@ -1,0 +1,246 @@
+/* 
+    __                         ___                _       __            
+   / /_  _________ _____  ____/ (_)  ____ ___  __(_)___  / /_____  _____
+  / __ \/ ___/ __ `/ __ \/ __  / /  / __ `/ / / / / __ \/ __/ __ \/ ___/
+ / /_/ / /  / /_/ / / / / /_/ / /  / /_/ / /_/ / / / / / /_/ /_/ (__  ) 
+/_.___/_/   \__,_/_/ /_/\__,_/_/   \__, /\__,_/_/_/ /_/\__/\____/____/  
+                                     /_/   
+*/                             
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+@keyframes upDown {
+	0% {
+        transform: translate(-50%, -5px) rotate(45deg);
+    }
+    25% {
+        transform: translate(-50%, 0px) rotate(45deg);
+    }
+    50% {
+        transform: translate(-50%, 5px) rotate(45deg);
+    }
+    75% {
+        transform: translate(-50%, 0px) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, -5px) rotate(45deg);
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin breakpoint($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "No value could be retrieved from `#{$name}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+$breakpoints: (
+    2  : (min-width:  400px),
+    3  : (min-width:  660px),
+    4  : (min-width:  800px),
+    5  : (min-width: 1050px),
+    6  : (min-width: 1300px)
+);
+
+// @font-face {
+//     font-family: 'Rooney';
+//     src: url('../assets/fonts/rooney/rooney-webfont.woff2') format('woff2'),
+//          url('../assets/fonts/rooney/rooney-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+// @font-face {
+//     font-family: 'Nexa';
+//     src: url('../assets/fonts/nexa/nexaregular-webfont.woff2') format('woff2'),
+//          url('../assets/fonts/nexa/nexaregular-webfont.woff') format('woff');
+//     font-weight: 400;
+//     font-style: normal;
+
+// }
+
+// @font-face {
+//     font-family: 'Nexa';
+//     src: url('../assets/fonts/nexa/nexathin-webfont.woff2') format('woff2'),
+//          url('../assets/fonts/nexa/nexathin-webfont.woff') format('woff');
+//     font-weight: 200;
+//     font-style: normal;
+
+// }
+
+// @font-face {
+//     font-family: 'Nexa';
+//     src: url('../assets/fonts/nexa/nexa-bold-webfont.woff2') format('woff2'),
+//          url('../assets/fonts/nexa/nexa-bold-webfont.woff') format('woff');
+//     font-weight: 600;
+//     font-style: normal;
+
+// }
+
+
+body {
+    // font-family: 'Rooney';
+    color: #3f4345;
+}
+
+a {
+    transition: all 200ms ease;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+    + p {
+        margin-top: 20px;
+    }
+}
+
+ul + p {
+    margin-top: 30px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.two-col {
+    width: 48%;
+    float: left;
+    + .two-col {
+        margin-left: 4%;
+    }
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include clearfix;
+}
+
+section {
+    padding: 30px 0;
+    @include breakpoint(4) {
+        padding: 80px 0;
+    }
+}
+
+h1,
+h2 {
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Nexa';
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+section {
+    padding: 30px 0;
+    @include breakpoint(4) {
+        padding: 100px 0;
+    }
+}
+.light {
+	font-size: 18px;
+	line-height: 1.4;
+}
+ul {
+	margin-left: 40px;
+	li {
+		list-style-type: square;
+	}
+}
+ul.col {
+	width: 200px;
+	float: left;
+}
