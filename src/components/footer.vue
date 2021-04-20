@@ -5,14 +5,14 @@
 				<img src="../assets/bq-logo.png">
 			</div>
 			<div class="social-links">
-				<a class="social" href="http://www.linkedin.com/in/brandi-q-54235416/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-				<a class="social" href="http://www.github.com/brandiquintos" target="_blank"><i class="fab fa-github"></i></a>
-				<a class="social" href="http://www.codepen.io/brandiquintos" target="_blank"><i class="fab fa-codepen"></i></a>
-				<a class="social" href="https://www.instagram.com/brandiquintos/" target="_blank"><i class="fab fa-instagram"></i></a>
-				<a class="social" href="mailto:brandiquintos@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+				<a class="social" href="http://www.linkedin.com/in/brandi-q-54235416/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']"/></a>
+				<a class="social" href="http://www.github.com/brandiquintos" target="_blank"><font-awesome-icon :icon="['fab', 'github']"/></a>
+				<a class="social" href="http://www.codepen.io/brandiquintos" target="_blank"><font-awesome-icon :icon="['fab', 'codepen']"/></a>
+				<a class="social" href="https://www.instagram.com/brandiquintos/" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']"/></a>
+				<a class="social" href="mailto:brandiquintos@gmail.com" target="_blank"><font-awesome-icon :icon="['far', 'envelope']"/></a>
 			</div>
 			<div class="attribution">
-				<i class="far fa-copyright"></i> twentytwenty
+				<font-awesome-icon :icon="['far', 'copyright']"/> 2020ne
 			</div>
 		</div>
 	</footer>
@@ -24,15 +24,14 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 	footer {
 		padding: 30px 0;
 		background-color: #3f4345;
 		color: #fff;
-		// @include breakpoint(4) {
-		//     padding: 80px 0;
-		// }
+		@include breakpoint(4) {
+		    padding: 80px 0;
+		}
 		.logo {
 			img {
 				width: 75px;
@@ -57,7 +56,7 @@ export default {
 				& +.social {
 					margin-left: 20px;
 				}
-				i {
+				svg {
 					position: relative;
 					left: 50%;
 					transform: translateX(-50%);

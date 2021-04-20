@@ -1,5 +1,5 @@
 <template>
-    <silent-box :gallery="gallery"></silent-box>
+    <silent-box :gallery="gallery">testing</silent-box>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
 	name: "gallery",
     gallery: [
         {
-            src: '../assets/ASW_1811.jpg',
+            src: 'https://cf.ltkcdn.net/dogs/images/orig/235430-2000x1332-australian-shepherd-puppy.jpg',
             description: 'Star Night Sky Ravine by Mark Basarab, from Unsplash.',
             alt: 'Blue starry night photo.',
             thumbnailWidth: '220px'
@@ -28,6 +28,8 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+    #silentbox-gallery {
+        background-color: blue;
+    }
 </style>

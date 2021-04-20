@@ -9,24 +9,35 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+    font-family: 'Rooney';
+    src: url('./fonts/rooney/rooney-webfont.woff2') format('woff2'),
+         url('./fonts/rooney/rooney-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#nav {
-  padding: 30px;
+@font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/nexa/nexaregular-webfont.woff2') format('woff2'),
+         url('./fonts/nexa/nexaregular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+@font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/nexa/nexathin-webfont.woff2') format('woff2'),
+         url('./fonts/nexa/nexathin-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+@font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/nexa/nexa-bold-webfont.woff2') format('woff2'),
+         url('./fonts/nexa/nexa-bold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
 }
 </style>
