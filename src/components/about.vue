@@ -17,14 +17,20 @@ export default {
 
 <style scoped lang="scss">
 	.headshot {
-		width: 200px;
 		border-radius: 50%;
-		margin-right: 20px;
+		width: 50%;
+		margin: 0 auto 20px;
+		@include breakpoint(4) {
+			width: 200px;
+			margin-right: 20px;
+		}
 	}
 	.text {
-		display: flex;
-		align-items: center;
-		P {
+		@include breakpoint(4) {
+			display: flex;
+			align-items: center;
+		}
+		p {
 			font-size: 22px;
 		}
 	}

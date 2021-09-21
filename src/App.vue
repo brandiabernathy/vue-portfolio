@@ -7,6 +7,7 @@
     </button>
     <nav>
       <router-link to="/">Home</router-link>
+      <router-link to="/projects">Projects</router-link>
       <router-link to="/photography">Photography</router-link>
       <a href="BrandiQuintosResume.pdf" target="_blank">Resume</a>
     </nav>
