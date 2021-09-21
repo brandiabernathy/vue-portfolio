@@ -1,7 +1,9 @@
 <template>
 	<div class="home">
 		<Intro />
-		<section id="about" class="light">
+		<About />
+		<Skills />
+		<!-- <section id="about" class="light">
 			<div class="wrapper about">
 				<p>Hi, I'm Brandi and I'm a front-end developer. I love to create concise, well-written code.</p>
 				<p>My experience includes:</p>
@@ -29,20 +31,24 @@
 					</ul>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<Footer />
 	</div>
 </template>
 
 <script>
+import About from "@/components/about.vue";
 import Footer from "@/components/footer.vue";
 import Intro from "@/components/intro.vue";
+import Skills from "@/components/skills.vue";
 
 export default {
 	name: "Home",
 	components: {
+		About,
 		Footer,
 		Intro,
+		Skills,
 	},
 };
 </script>

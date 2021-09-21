@@ -65,6 +65,10 @@ export default {
     font-style: normal;
 }
 
+body {
+  background-color: #fbfbfb;
+}
+
 .menu-toggle {
   position: absolute;
   top: 20px;

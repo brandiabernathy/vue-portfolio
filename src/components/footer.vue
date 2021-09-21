@@ -11,9 +11,6 @@
 				<a class="social" href="https://www.instagram.com/brandiquintos/" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']"/></a>
 				<a class="social" href="mailto:brandiquintos@gmail.com" target="_blank"><font-awesome-icon :icon="['far', 'envelope']"/></a>
 			</div>
-			<div class="attribution">
-				<font-awesome-icon :icon="['far', 'copyright']"/> 2020ne
-			</div>
 		</div>
 	</footer>
 </template>
@@ -43,7 +40,7 @@ export default {
 			left: 50%;
 			transform: translate(-50%, 0);
 			display: inline-block;
-			margin: 60px 0;
+			margin-top: 60px;
 			.social {
 				display: inline-flex;
 				color: #fff;
@@ -62,9 +59,6 @@ export default {
 					transform: translateX(-50%);
 				}
 			}
-		}
-		.attribution {
-			text-align: center;
 		}
 	}
 </style>
