@@ -3,7 +3,7 @@
 		<div class="wrapper about">
 			<div class="text">
 				<img class="headshot" src="../assets/headshot.jpg">
-				<p>Hello! I'm Brandi and I enjoy creating things that live on the internet. I love to create concise, well-written code.</p>
+				<p>Hello! I'm Brandi and I enjoy creating things that live on the internet. passionate about creating interactive applications and experiences on the web.I love to create concise, well-written code.</p>
 			</div>
 		</div>
 	</section>

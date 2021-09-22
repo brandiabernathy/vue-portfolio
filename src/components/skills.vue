@@ -53,13 +53,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-	h3 {
-		font-size: 22px;
-		font-family: 'Nexa';
-		text-transform: uppercase;
-		margin-bottom: 20px;
-		letter-spacing: 2px;
-	}
 	.bar {
 		position: relative;
 		height: 30px;

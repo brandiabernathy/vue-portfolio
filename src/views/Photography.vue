@@ -1,6 +1,7 @@
 <template>
   <div class="photography">
     <Header />
+    <h1>PHOTOGRAPHY</h1>
     <Gallery />
     <Footer />
   </div>
