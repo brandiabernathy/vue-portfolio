@@ -2,7 +2,7 @@
 	<header>
 		<div class="wrapper">
 			<div class="logo">
-				<img src="../assets/bq-logo.png">
+				<a href="/"> <img src="../assets/bq-logo.png"> </a>
 			</div>
 		</div>
 	</header>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-	name: "footer",
+	name: "Header",
 };
 </script>
 

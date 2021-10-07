@@ -3,8 +3,8 @@
         <img :src="image" />
         <div class="text">
             <h3> {{ name }} </h3>
-            <div> Tech stack: {{ tech }} </div>
             <div> {{ description }} </div>
+            <div> Tech stack: {{ tech }} </div>
         </div>
     </div>
 </template>
@@ -22,6 +22,18 @@ export default {
         img {
             width: 500px;
             max-width: 100%;
+        }
+        + .project {
+            margin-top: 80px;
+        }
+        .text {
+            padding-left: 30px;
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            .text {
+                text-align: right;
+            }
         }
     }
 </style>
