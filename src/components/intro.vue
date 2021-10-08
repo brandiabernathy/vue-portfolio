@@ -17,6 +17,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
+	@keyframes fadeInUp {
+		0% {
+ 			opacity: 0;
+ 			-webkit-transform: translateY(20px);
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: translateY(0);
+		}
+	}
+	@keyframes fadeIn {
+		0% {
+ 			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	.intro {
 		position: relative;
 		height: 100vh;
@@ -44,11 +62,12 @@ export default {
 		.text {
 			position: absolute;
 			top: 50%;
-			transform: translate(0, -50%);
+			// transform: translate(0, -50%);
 			text-align: center;
 			right: 40px;
 			left: 40px;
 			z-index: 2;
+			animation: fadeInUp 3s;
 		}
 		.image {
 			position: absolute;
