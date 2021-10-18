@@ -4,8 +4,8 @@
 		<About />
 		<Skills />
 		<section id="buttons" class="wrapper">
-			<Button label="projects" />
-			<Button label="photography" />
+			<Button label="projects" link="/projects" />
+			<Button label="photography" link="/photography" />
 			<Button label="resume" link="BrandiQuintosResume.pdf"/>
 		</section>
 		<Footer />

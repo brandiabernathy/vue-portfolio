@@ -11,8 +11,8 @@
                     {{ item }}
                 </span>
             </div>
-            <Button label="live" />
-            <Button label="code" />
+            <Button label="live" :link="live" />
+            <Button label="code" :link="github" />
         </div>
     </div>
 </template>
@@ -23,7 +23,7 @@ import Button from "@/components/button.vue";
 
 export default {
 	name: "project",
-    props: ['name', 'image', 'description', 'tech'],
+    props: ['name', 'image', 'description', 'tech', 'github', 'live'],
     components: { Button },
 };
 </script>

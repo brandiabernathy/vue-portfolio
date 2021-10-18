@@ -8,14 +8,18 @@
         <Project
             name="Fampicks"
             image="/images/fampicks.jpg"
-            description="Worked with another developer to create this site for viewing a family pool of SEC football picks in 2020."
-            :tech="['Vue.js']"
+            description="Worked with another developer to create this site for viewing a family pool of SEC football picks in 2020. I was in charge of all the JavaScript aspects, while the other person handled the design and styling."
+            :tech="['Vue.js', 'JSON']"
+            github="https://github.com/brandiquintos/fampicks"
+            live="http://brandiquintos.com/fampicks/"
         />
         <Project
             name="MO COVID"
             image="/images/mo-covid.jpg"
-            description="A simple dashboard displaying some information about COVID in the state of Missouri."
+            description="A simple dashboard displaying some statistics about COVID in the state of Missouri."
             :tech="['Vue.js', 'Chart.js', 'COVID Act Now API']"
+            github="https://github.com/brandiquintos/mo-covid"
+            live="http://brandiquintos.com/mo-covid/"
         />
     </div>
     <Footer />
