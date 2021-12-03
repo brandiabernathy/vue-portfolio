@@ -9,7 +9,7 @@
             name="Fampicks"
             image="/images/fampicks.jpg"
             description="Worked with another developer to create this site for viewing a family pool of SEC football picks in 2020. I was in charge of all the JavaScript aspects, while the other person handled the design and styling."
-            :tech="['Vue.js', 'JSON']"
+            :tech="['Vue.js', 'JSON', 'ESPN API']"
             github="https://github.com/brandiquintos/fampicks"
             live="http://brandiquintos.com/fampicks/"
         />
