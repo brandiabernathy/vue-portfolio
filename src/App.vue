@@ -8,7 +8,7 @@
     <nav>
       <router-link to="/" @click="toggle_menu">Home</router-link>
       <router-link to="/projects" @click="toggle_menu">Projects</router-link>
-      <router-link to="/photography" @click="toggle_menu">Photography</router-link>
+      <!-- <router-link to="/photography" @click="toggle_menu">Photography</router-link> -->
       <a href="BrandiQuintosResume.pdf" target="_blank">Resume</a>
     </nav>
     <router-view />

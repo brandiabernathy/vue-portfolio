@@ -4,8 +4,8 @@
 		<About />
 		<Skills />
 		<section id="buttons" class="wrapper">
-			<Button label="projects" link="/projects" />
-			<Button label="photography" link="/photography" />
+			<Button label="projects" route="/projects" />
+			<!-- <Button label="photography" link="/photography" /> -->
 			<Button label="resume" link="BrandiQuintosResume.pdf"/>
 		</section>
 		<Footer />
@@ -32,12 +32,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#buttons {
-	margin-top: 80px;
-	margin-bottom: 80px;
-	@include breakpoint(4) {
-		display: flex;
-		justify-content: space-evenly;
+	#buttons {
+		margin-top: 80px;
+		margin-bottom: 80px;
+		@include breakpoint(4) {
+			display: flex;
+			justify-content: space-evenly;
+		}
 	}
-}
 </style>

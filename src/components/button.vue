@@ -1,16 +1,24 @@
 <template>
-	<a class="button" :href="link">
-        <div class="label">
-            {{ label }}
-            <svg class="arrow" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" ><path fill="none" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
-        </div>
-    </a>
+    <div class="button">
+        <a v-if="link" :href="link" target="_blank">
+            <div class="label">
+                {{ label }}
+                <svg class="arrow" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" ><path fill="none" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
+            </div>
+        </a>
+        <router-link v-else-if="route" :to="route" @click="toggle_menu">
+            <div class="label">
+                {{ label }}
+                <svg class="arrow" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" ><path fill="none" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
+            </div>
+        </router-link>
+    </div>
 </template>
 
 <script>
 export default {
 	name: "button",
-    props: ['label', 'link'],
+    props: ['label', 'link', 'route'],
 };
 </script>
 
@@ -27,18 +35,19 @@ export default {
         color: #6ad1aa;
         font-size: 14px;
         cursor: pointer;
-        // transition: all 500ms ease-out;
+        a {
+            color: #6ad1aa;
+        }
         &:hover {
             .label:before {
-                // transform: translateX(0);
                 left: 0;
             }
             .arrow {
                 stroke: #fff;
             }
-            // border-color: #fff;
-            color: #fff;
-            // background-color: #6ad1aa;
+            a {
+                color: #fff;
+            }
         }
         .label {
             padding: 20px 50px;
@@ -52,7 +61,6 @@ export default {
                 background-color: #6ad1aa;
                 z-index: -1;
                 transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-                // transform: translateX(-100%);
             }
         }
         .arrow {

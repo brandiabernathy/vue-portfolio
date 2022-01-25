@@ -62,7 +62,6 @@ export default {
 		.text {
 			position: absolute;
 			top: 50%;
-			// transform: translate(0, -50%);
 			text-align: center;
 			right: 40px;
 			left: 40px;
