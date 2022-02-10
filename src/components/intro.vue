@@ -6,13 +6,20 @@
 			<h1 class="name">brandi quintos</h1>
 			<h2 class="tagline">front end web developer</h2>
 		</div>
-		<a href="#about"><div class="arrow"></div></a>
+		<a class="down" @click="scrollTo"><div class="arrow"></div></a>
 	</section>
 </template>
 
 <script>
 export default {
-		name: "intro",
+	name: "intro",
+	methods: {
+		scrollTo() {
+			document.querySelector('#about').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+	}
 };
 </script>
 
@@ -62,6 +69,7 @@ export default {
 		.text {
 			position: absolute;
 			top: 50%;
+			margin-top: -65px;
 			text-align: center;
 			right: 40px;
 			left: 40px;
@@ -87,11 +95,18 @@ export default {
 		.tagline {
 			text-shadow: 0 1px 1px #4d4d4d;
 		}
-		.arrow {
+		.down {
 			position: absolute;
 			left: 50%;
 			z-index: 2;
 			bottom: 40px;
+			display: block;
+			height: 30px;
+			width: 30px;
+			animation: fadeInUp 3s;
+			cursor: pointer;
+		}
+		.arrow {
 			width: 20px;
 			height: 20px;
 			transform: translateX(-50%) rotate(45deg);
@@ -101,6 +116,7 @@ export default {
 			border-bottom: 2px #fff solid;
 			text-shadow: 2px 2px 2px #4d4d4d;
 			animation: upDown 1.5s linear infinite;
+			animation-delay: 2s;
 		}
 	}
 </style>

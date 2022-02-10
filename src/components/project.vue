@@ -11,8 +11,10 @@
                     {{ item }}
                 </span>
             </div>
-            <Button label="live" :link="live" />
-            <Button label="code" :link="github" />
+            <div class="buttons">
+                <Button label="live" :link="live" />
+                <Button label="code" :link="github" />
+            </div>
         </div>
     </div>
 </template>
@@ -30,9 +32,9 @@ export default {
 
 <style scoped lang="scss">
     .project {
-        display: flex;
-        // border: 1px solid #edf2f5;
-        // box-shadow: 0 0 20px #f1f5f7;
+        @include breakpoint(4) {
+            display: flex;
+        }
         h3 {
             text-transform: lowercase;
             font-size: 28px;
@@ -47,28 +49,32 @@ export default {
             margin-top: 80px;
         }
         .button {
-            // transform: scale(.8);
             + .button {
-                margin-left: 10px;
+                margin-top: 10px;
+                @include breakpoint(4) {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
             }
         }
         .image-wrapper {
-            // position: relative;
-            width: 35%;
-            // &:before {
-            //     position: absolute;
-            //     width: 100%;
-            //     height: 100%;
-            //     content: '';
-            //     border: 1px solid black;
-            // }
+            @include breakpoint(4) {
+                width: 35%;
+            }
         }
         .text {
-            padding-left: 30px;
-            width: 65%;
+            padding-top: 20px;
+            @include breakpoint(4) {
+                padding-top: 0;
+                padding-left: 30px;
+                width: 65%;
+            }
         }
         .tech {
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
             span {
                 padding: 5px 10px;
                 border-radius: 20px;
@@ -77,11 +83,5 @@ export default {
                 margin: 2px;
             }
         }
-        // &:nth-child(even) {
-        //     flex-direction: row-reverse;
-        //     .text {
-        //         text-align: right;
-        //     }
-        // }
     }
 </style>

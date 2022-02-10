@@ -23,7 +23,9 @@ export default {
 		background-color: #3f4345;
 		color: #fff;
 		padding: 20px 0;
+		margin-bottom: 40px;
 		@include breakpoint(4) {
+			margin-bottom: 80px
 		}
 		.logo {
 			img {

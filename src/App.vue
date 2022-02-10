@@ -6,9 +6,9 @@
       <span class="icon-bar bottom"></span>
     </button>
     <nav>
-      <router-link to="/" @click="toggle_menu">Home</router-link>
-      <router-link to="/projects" @click="toggle_menu">Projects</router-link>
-      <!-- <router-link to="/photography" @click="toggle_menu">Photography</router-link> -->
+      <router-link to="/">Home</router-link>
+      <router-link to="/projects">Projects</router-link>
+      <!-- <router-link to="/photography">Photography</router-link> -->
       <a href="BrandiQuintosResume.pdf" target="_blank">Resume</a>
     </nav>
     <router-view />
@@ -23,12 +23,12 @@ export default {
   methods: {
     toggle_menu() {
       console.log('toggle');
-      if(this.menu_open == false) {
-        this.menu_open = true;
-      }
-      else {
+      this.menu_open = !this.menu_open;
+    },
+  },
+  watch: {
+    $route() {
         this.menu_open = false;
-      }
     }
   }
 }

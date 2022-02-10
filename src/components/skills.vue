@@ -30,6 +30,10 @@
 				<div class="fill"></div>
 				<span class="label">SKETCH</span>
 			</div>
+			<div class="bar react">
+				<div class="fill"></div>
+				<span class="label">REACT</span>
+			</div>
 			<div class="bar accessibility">
 				<div class="fill"></div>
 				<span class="label">WCAG</span>
@@ -38,10 +42,6 @@
 				<div class="fill"></div>
 				<span class="label">RESPONSIVE DESIGN</span>
 			</div>
-			<!-- <div class="bar react">
-				<div class="fill"></div>
-				<span class="label">REACT</span>
-			</div> -->
 		</div>
 	</section>
 </template>

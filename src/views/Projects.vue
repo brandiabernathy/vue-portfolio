@@ -21,6 +21,14 @@
             github="https://github.com/brandiquintos/mo-covid"
             live="http://brandiquintos.com/mo-covid/"
         />
+        <Project
+            name="Travel Journal"
+            image="/images/travel-journal.jpg"
+            description="A very small project made while working through Scrimba's Learn React for Free course"
+            :tech="['React', 'Grid', 'Figma']"
+            github="https://github.com/brandiquintos/travel-journal"
+            live="http://brandiquintos.com/travel-journal/"
+        />
     </div>
     <Footer />
   </div>

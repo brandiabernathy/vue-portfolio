@@ -30,14 +30,3 @@ export default {
 	},
 };
 </script>
-
-<style scoped lang="scss">
-	#buttons {
-		margin-top: 80px;
-		margin-bottom: 80px;
-		@include breakpoint(4) {
-			display: flex;
-			justify-content: space-evenly;
-		}
-	}
-</style>

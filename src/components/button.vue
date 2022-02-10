@@ -6,7 +6,7 @@
                 <svg class="arrow" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" ><path fill="none" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
             </div>
         </a>
-        <router-link v-else-if="route" :to="route" @click="toggle_menu">
+        <router-link v-else-if="route" :to="route">
             <div class="label">
                 {{ label }}
                 <svg class="arrow" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" ><path fill="none" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
