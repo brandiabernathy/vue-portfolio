@@ -12,7 +12,7 @@ import VueSilentbox from 'vue-silentbox';
 Vue.use(VueSilentbox);
 
 export default {
-	name: "gallery",
+	name: "Gallery",
     data: () => ({
         gallery: [
             {

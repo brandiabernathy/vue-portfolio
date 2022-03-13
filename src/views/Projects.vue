@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import Footer from "@/components/footer.vue";
-import Header from "@/components/header.vue";
-import Project from "@/components/project.vue";
+import Footer from "@/components/Footer.vue";
+import Header from "@/components/Header.vue";
+import Project from "@/components/Project.vue";
 
 export default {
   name: "Projects",

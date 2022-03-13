@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import About from "@/components/about.vue";
-import Button from "@/components/button.vue";
-import Footer from "@/components/footer.vue";
-import Intro from "@/components/intro.vue";
-import Skills from "@/components/skills.vue";
+import About from "@/components/About.vue";
+import Button from "@/components/Button.vue";
+import Footer from "@/components/Footer.vue";
+import Intro from "@/components/Intro.vue";
+import Skills from "@/components/Skills.vue";
 
 export default {
 	name: "Home",

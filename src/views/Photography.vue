@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import Footer from "@/components/footer.vue";
-import Gallery from "@/components/gallery.vue";
-import Header from "@/components/header.vue";
+import Footer from "@/components/Footer.vue";
+import Gallery from "@/components/Gallery.vue";
+import Header from "@/components/Header.vue";
 
 export default {
   name: "Photography",

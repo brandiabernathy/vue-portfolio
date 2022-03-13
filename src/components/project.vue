@@ -21,10 +21,10 @@
 
 <script>
 
-import Button from "@/components/button.vue";
+import Button from "@/components/Button.vue";
 
 export default {
-	name: "project",
+	name: "Project",
     props: ['name', 'image', 'description', 'tech', 'github', 'live'],
     components: { Button },
 };

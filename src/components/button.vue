@@ -17,7 +17,7 @@
 
 <script>
 export default {
-	name: "button",
+	name: "Button",
     props: ['label', 'link', 'route'],
 };
 </script>

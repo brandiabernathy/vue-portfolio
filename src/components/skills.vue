@@ -14,6 +14,10 @@
 				<div class="fill"></div>
 				<span class="label">JAVASCRIPT</span>
 			</div>
+			<div class="bar figma">
+				<div class="fill"></div>
+				<span class="label">FIGMA</span>
+			</div>
 			<div class="bar vue">
 				<div class="fill"></div>
 				<span class="label">VUE.JS</span>
@@ -48,6 +52,6 @@
 
 <script>
 export default {
-	name: "skills",
+	name: "Skills",
 };
 </script>

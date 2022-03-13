@@ -2,7 +2,7 @@
 	<footer>
 		<div class="wrapper">
 			<div class="logo">
-				<img src="../assets/bq-logo.png">
+				<img src="../assets/ba-logo.svg">
 			</div>
 			<div class="social-links">
 				<a class="social" href="http://www.linkedin.com/in/brandi-q-54235416/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']"/></a>

@@ -2,10 +2,10 @@
 	<header>
 		<div class="wrapper">
 			<div class="logo">
-				<a href="/"> <img src="../assets/bq-logo.png"> </a>
+				<a href="/"> <img src="../assets/ba-logo.svg"> </a>
 			</div>
 			<div class="name">
-				<a href="/">brandi quintos</a>
+				<a href="/">brandi abernathy</a>
 			</div>
 		</div>
 	</header>

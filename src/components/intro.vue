@@ -1,9 +1,8 @@
 <template>
 	<section class="intro">
 		<div class="overlay"></div>
-		<img class="image" src="../assets/el-faro.jpg" />
 		<div class="text">
-			<h1 class="name">brandi quintos</h1>
+			<h1 class="name">brandi abernathy</h1>
 			<h2 class="tagline">front end web developer</h2>
 		</div>
 		<a class="down" @click="scrollTo"><div class="arrow"></div></a>
@@ -12,7 +11,7 @@
 
 <script>
 export default {
-	name: "intro",
+	name: "Intro",
 	methods: {
 		scrollTo() {
 			document.querySelector('#about').scrollIntoView({
@@ -52,6 +51,11 @@ export default {
 		letter-spacing: 1px;
 		padding: 0;
 		overflow: hidden;
+		background: top center url('../assets/el-faro.jpg')  no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		@include breakpoint(4) {
 			min-height: 0;
 			height: 100vh;
@@ -67,26 +71,10 @@ export default {
 			z-index: 1;
 		}
 		.text {
-			position: absolute;
-			top: 50%;
-			margin-top: -65px;
+			position: relative;
 			text-align: center;
-			right: 40px;
-			left: 40px;
 			z-index: 2;
 			animation: fadeInUp 3s;
-		}
-		.image {
-			position: absolute;
-			top: 0;
-			height: 100%;
-			max-width: none;
-			left: -50%;
-			@include breakpoint(4) {
-				position: static;
-				max-width: 100%;
-				height: auto;
-			}
 		}
 		.name {
 			margin-bottom: 30px;
