@@ -9,7 +9,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/projects">Projects</router-link>
       <!-- <router-link to="/photography">Photography</router-link> -->
-      <a href="BrandiQuintosResume.pdf" target="_blank">Resume</a>
+      <a href="BrandiAbernathyResume.pdf" target="_blank">Resume</a>
     </nav>
     <router-view />
   </div>
