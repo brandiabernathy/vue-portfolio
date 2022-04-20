@@ -13,6 +13,13 @@
             github="https://github.com/brandiquintos/fampicks"
             live="http://brandiquintos.com/fampicks/"
         />
+         <Project
+            name="Weather App"
+            image="/images/weather.jpg"
+            description="A weather app displaying current conditions with hourly and daily information. Allows searching by US city."
+            :tech="['React', 'Tailwind CSS', 'AccuWeather API', 'Chart.js']"
+            github="https://github.com/brandiquintos/weather"
+        />
         <Project
             name="MO COVID"
             image="/images/mo-covid.jpg"
@@ -24,7 +31,7 @@
         <Project
             name="Travel Journal"
             image="/images/travel-journal.jpg"
-            description="A very small project made while working through Scrimba's Learn React for Free course"
+            description="A very small project made while working through Scrimba's 'Learn React for Free' course."
             :tech="['React', 'Grid', 'Figma']"
             github="https://github.com/brandiquintos/travel-journal"
             live="http://brandiquintos.com/travel-journal/"

@@ -6,14 +6,15 @@
         <div class="text">
             <h3> {{ name }} </h3>
             <div class="description"> {{ description }} </div>
-            <div class="tech"> Tech stack:
-                <span v-for="item in tech" :key="item">
+            <div class="tech">
+                <span> Tech stack: </span>
+                <span class="item" v-for="item in tech" :key="item">
                     {{ item }}
                 </span>
             </div>
             <div class="buttons">
-                <Button label="live" :link="live" />
-                <Button label="code" :link="github" />
+                <Button v-if="live" label="live" :link="live" />
+                <Button v-if="github" label="code" :link="github" />
             </div>
         </div>
     </div>
@@ -75,7 +76,10 @@ export default {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            span {
+            span:first-child {
+                margin-right: 4px;
+            }
+            .item {
                 padding: 5px 10px;
                 border-radius: 20px;
                 color: #fff;
