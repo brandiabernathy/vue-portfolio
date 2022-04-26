@@ -6,7 +6,7 @@
 		<section id="buttons" class="wrapper">
 			<Button label="projects" route="/projects" />
 			<!-- <Button label="photography" link="/photography" /> -->
-			<Button label="resume" link="BrandiQuintosResume.pdf"/>
+			<Button label="resume" link="BrandiAbernathyResume.pdf"/>
 		</section>
 		<Footer />
 	</div>

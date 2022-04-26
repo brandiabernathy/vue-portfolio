@@ -35,6 +35,7 @@ export default {
 		.name {
 			font-family: "Nexa";
     		font-size: 26px;
+			font-weight: 300;
 			a {
 				color: #fff;
 			}
@@ -43,6 +44,6 @@ export default {
 	.wrapper {
 		display: flex;
 		align-items: center;
-    	gap: 20px;
+    	gap: 15px;
 	}
 </style>

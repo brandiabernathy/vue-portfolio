@@ -22,7 +22,6 @@ export default {
   }),
   methods: {
     toggle_menu() {
-      console.log('toggle');
       this.menu_open = !this.menu_open;
     },
   },
@@ -80,13 +79,14 @@ body {
   border: 0;
   cursor: pointer;
   z-index: 4;
+  padding: 0;
   &:focus {
     outline: none;
   }
 }
 .icon-bar {
   display: block;
-  width: 50px;
+  width: 40px;
   height: 2px;
   border-radius: 1px;
   background-color: white;
@@ -94,6 +94,9 @@ body {
   + .icon-bar {
     margin-top: 12px;
   }
+   @include breakpoint(4) {
+     width: 50px;
+   }
 }
 
 .menu-open {

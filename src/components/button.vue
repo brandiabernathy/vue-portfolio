@@ -68,5 +68,11 @@ export default {
             height: 12px;
             margin-left: 10px;
         }
+        + .button {
+            margin-top: 20px;
+            @include breakpoint(4) {
+                margin-top: 0;
+            }
+        }
     }
 </style>

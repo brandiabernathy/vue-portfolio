@@ -9,12 +9,12 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "Brandi Abernathy | Front-end Developer",
     component: Home,
   },
   {
     path: "/photography",
-    name: "Photography",
+    name: "Brandi Abernathy | Photography",
     component: Photography,
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -24,7 +24,7 @@ const routes = [
   },
   {
     path: "/projects",
-    name: "Projects",
+    name: "Brandi Abernathy | Projects",
     component: Projects,
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -39,6 +39,11 @@ const router = new VueRouter({
   scrollBehavior () {
     return { x: 0, y: 0 };
   }
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = to.name;
+  next();
 });
 
 export default router;
