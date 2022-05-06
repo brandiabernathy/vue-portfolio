@@ -3,7 +3,7 @@
 		<div class="overlay"></div>
 		<div class="text">
 			<h1 class="name">brandi abernathy</h1>
-			<h2 class="tagline">front end web developer</h2>
+			<h2 class="tagline">front-end developer</h2>
 		</div>
 		<a class="down" @click="scrollTo"><div class="arrow"></div></a>
 	</section>

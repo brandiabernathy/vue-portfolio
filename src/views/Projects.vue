@@ -11,7 +11,7 @@
             description="Worked with another developer to create this site for viewing a family pool of SEC football picks in 2020. I was in charge of all the JavaScript aspects, while the other person handled the design and styling."
             :tech="['Vue.js', 'JSON', 'ESPN API']"
             github="https://github.com/brandiquintos/fampicks"
-            live="http://brandiquintos.com/fampicks/"
+            live="http://brandiabernathy.com/fampicks/"
         />
          <Project
             name="Weather App"
@@ -26,7 +26,7 @@
             description="A simple dashboard displaying some statistics about COVID in the state of Missouri."
             :tech="['Vue.js', 'Chart.js', 'COVID Act Now API']"
             github="https://github.com/brandiquintos/mo-covid"
-            live="http://brandiquintos.com/mo-covid/"
+            live="http://brandiabernathy.com/mo-covid/"
         />
         <Project
             name="Travel Journal"
@@ -34,7 +34,7 @@
             description="A very small project made while working through Scrimba's 'Learn React for Free' course."
             :tech="['React', 'Grid', 'Figma']"
             github="https://github.com/brandiquintos/travel-journal"
-            live="http://brandiquintos.com/travel-journal/"
+            live="http://brandiabernathy.com/travel-journal/"
         />
     </div>
     <Footer />
