@@ -2,7 +2,7 @@
 	<div class="home">
 		<Intro />
 		<About />
-		<Skills />
+		<!-- <Skills /> -->
 		<section id="buttons" class="wrapper">
 			<Button label="projects" route="/projects" />
 			<!-- <Button label="photography" link="/photography" /> -->
@@ -17,7 +17,7 @@ import About from "@/components/About.vue";
 import Button from "@/components/Button.vue";
 import Footer from "@/components/Footer.vue";
 import Intro from "@/components/Intro.vue";
-import Skills from "@/components/Skills.vue";
+// import Skills from "@/components/Skills.vue";
 
 export default {
 	name: "Home",
@@ -26,7 +26,7 @@ export default {
 		Button,
 		Footer,
 		Intro,
-		Skills,
+		// Skills,
 	},
 };
 </script>
