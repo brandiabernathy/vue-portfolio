@@ -34,35 +34,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400&display=swap');
+
 @font-face {
     font-family: 'Rooney';
     src: url('./fonts/rooney/rooney-webfont.woff2') format('woff2'),
          url('./fonts/rooney/rooney-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nexa';
-    src: url('./fonts/nexa/nexaregular-webfont.woff2') format('woff2'),
-         url('./fonts/nexa/nexaregular-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nexa';
-    src: url('./fonts/nexa/nexathin-webfont.woff2') format('woff2'),
-         url('./fonts/nexa/nexathin-webfont.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nexa';
-    src: url('./fonts/nexa/nexa-bold-webfont.woff2') format('woff2'),
-         url('./fonts/nexa/nexa-bold-webfont.woff') format('woff');
-    font-weight: 600;
     font-style: normal;
 }
 
@@ -125,7 +103,7 @@ nav {
     // box-shadow: inset -7px 0 8px -8px rgb(36 37 53 / 50%);
     transform: translateY(-100%);
     letter-spacing: 2px;
-    font-family: 'Nexa';
+    font-family: 'Manjari';
     font-weight: 200;
     text-transform: uppercase;
     background-color: #3f4345;

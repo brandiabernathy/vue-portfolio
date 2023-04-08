@@ -29,11 +29,11 @@ export default {
         display: inline-block;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-family: 'Nexa';
+        font-family: 'Manjari';
         border: 1px solid #6ad1aa !important;
         background-color: transparent;
         color: #6ad1aa;
-        font-size: 14px;
+        font-size: 16px;
         cursor: pointer;
         a {
             color: #6ad1aa;

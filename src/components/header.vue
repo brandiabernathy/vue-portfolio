@@ -33,7 +33,7 @@ export default {
 			}
 		}
 		.name {
-			font-family: "Nexa";
+			font-family: "Manjari";
     		font-size: 26px;
 			font-weight: 300;
 			a {
